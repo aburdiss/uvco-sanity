@@ -1,15 +1,8 @@
 import about from './about';
 import contact from './contact';
 import event from './event';
-import gallery from './gallery';
 import home from './home';
+import image from './galleryImage';
 import privacyPolicy from './privacyPolicy';
 
-export const schemaTypes = [
-  home,
-  gallery,
-  about,
-  contact,
-  privacyPolicy,
-  event,
-];
+export const schemaTypes = [home, about, contact, privacyPolicy, event, image];

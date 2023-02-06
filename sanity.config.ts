@@ -29,11 +29,6 @@ export default defineConfig({
             ),
 
             S.listItem()
-              .title('Gallery')
-              .id('gallery')
-              .child(S.document().schemaType('gallery').documentId('gallery')),
-
-            S.listItem()
               .title('About')
               .id('about')
               .child(S.document().schemaType('about').documentId('about')),
@@ -54,7 +49,7 @@ export default defineConfig({
 
             // Regular document types
             S.documentTypeListItem('event').title('Event'),
-            // S.documentTypeListItem('author').title('Authors'),
+            S.documentTypeListItem('galleryImage').title('Gallery Image'),
           ]),
     }),
     visionTool(),

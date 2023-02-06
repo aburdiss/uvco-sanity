@@ -5,6 +5,16 @@ export default defineType({
   title: 'Contact',
   type: 'document',
   fields: [
-    defineField({ name: 'headline', title: 'Headline', type: 'string' }),
+    defineField({
+      name: 'formHeadline',
+      title: 'Form Headline',
+      type: 'string',
+    }),
+    defineField({
+      name: 'formText',
+      title: 'Form Text',
+      type: 'array',
+      of: [{ type: 'block' }],
+    }),
   ],
 });
