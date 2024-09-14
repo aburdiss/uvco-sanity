@@ -51,6 +51,8 @@ export default defineType({
     defineField({
       name: 'noEventsText',
       title: 'No Events Text',
+      description:
+        'Do not use this field to add upcoming event information. Text in this field will show after all published events are in the past. To add a concert, add a new "Event" in the left sidebar.',
       type: 'array',
       of: [{ type: 'block' }],
     }),
